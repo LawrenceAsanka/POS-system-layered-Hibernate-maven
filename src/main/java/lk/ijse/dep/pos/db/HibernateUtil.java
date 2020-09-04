@@ -21,9 +21,8 @@ public class HibernateUtil {
 
   private static SessionFactory buildSessionFactory() {
 
-    File file = new File("resources/application.properties");
     StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder()
-        .loadProperties(file)
+        .loadProperties("application.properties")
         .build();
 
     Metadata metadata = new MetadataSources(standardRegistry)
