@@ -11,7 +11,7 @@ public class ItemDAOImpl extends CrudDAOImpl<Item,String> implements ItemDAO {
 
 
   public String getLastItemCode() throws Exception {
-    List list = session.createQuery("SELECT i.code FROM lk.ijse.dep.pos.lk.ijse.dep.pos.entity.Item i ORDER BY i.code DESC").setMaxResults(1).list();
+    List list = session.createQuery("SELECT i.code FROM lk.ijse.dep.pos.entity.Item i ORDER BY i.code DESC").setMaxResults(1).list();
     return list.size() > 0 ? (String) list.get(0) : null;
 
   }
