@@ -288,16 +288,6 @@ public class PlaceOrderFormController {
         calculateTotal();
         generateOrderId();
     }
-    @FXML
-    private void navigateToHome(MouseEvent event) throws IOException {
-        URL resource = this.getClass().getResource("/lk/ijse/dep/pos/view/MainForm.fxml");
-        Parent root = FXMLLoader.load(resource);
-        Scene scene = new Scene(root);
-        Stage primaryStage = (Stage) (this.root.getScene().getWindow());
-        primaryStage.setScene(scene);
-        primaryStage.centerOnScreen();
-    }
-
     public void txtQty_OnAction(ActionEvent actionEvent) {
         btnAdd_OnAction(actionEvent);
     }
@@ -326,4 +316,13 @@ public class PlaceOrderFormController {
     }
 
 
+    @FXML
+    private void navigateToHome(MouseEvent event) throws IOException {
+        URL resource = this.getClass().getResource("/view/MainForm.fxml");
+        Parent root = FXMLLoader.load(resource);
+        Scene scene = new Scene(root);
+        Stage primaryStage = (Stage) (this.root.getScene().getWindow());
+        primaryStage.setScene(scene);
+        primaryStage.centerOnScreen();
+    }
 }
