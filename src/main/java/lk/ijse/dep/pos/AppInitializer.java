@@ -8,9 +8,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+/**
+ * AppInitializer is the main class of this pos system
+ *
+ * @author Lawrence Asanka
+ */
 public class AppInitializer extends Application {
 
+  /**
+   * This is the starting point of application
+   *
+   * There is nothing to do just  run the class
+   *
+   * @param args No need to supply any parameters
+   */
   public static void main(String[] args) {
     launch(args);
 
