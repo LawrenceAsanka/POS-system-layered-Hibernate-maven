@@ -1,7 +1,5 @@
 # POS System
 
-***POS System using Java,MySQL,Hibernate and Maven***
-
 In this **POS System** has all the functionalities of a POS system, like customer adding,item management,order placing,order viewing and order searching.It consists of five main parts;
 
     * Manage customers
@@ -16,10 +14,6 @@ In this **POS System** has all the functionalities of a POS system, like custome
 * [MySQL Connector](https://mvnrepository.com/artifact/mysql/mysql-connector-java) - MySQL Connector/J is the official JDBC driver for MySQL.
 * [Hibernate](https://mvnrepository.com/artifact/org.projectlombok/lombok) - Hibernate ORM is an object-relational mapping tool for the Java programming language. It provides a framework for mapping an object-oriented domain model to a relational database.
 * [Lombok](https://mvnrepository.com/artifact/org.hibernate/hibernate-core) - Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.
-
-## Database
-
-Find Database Configuration From src/main/java/lk.ijse.dep.pos.db.DBConnection and set your Database name,user name and password.
 
 ## Contributing
 
